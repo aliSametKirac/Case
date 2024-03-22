@@ -1,0 +1,41 @@
+$form-bg-color: #f1f1f1
+$btn-submit-bg-color: #007bff
+$btn-submit-hover-color: darken($btn-submit-bg-color, 10%)
+$btn-cancel-bg-color: #007bff
+$btn-cancel-hover-color: darken($btn-cancel-bg-color, 10%)
+$border-color: #ccc
+$form-width: 400px
+$form-padding: 20px
+$input-padding: 12px 20px
+$input-margin: 8px 0
+
+.registerForm
+  max-width: $form-width
+  margin: 20px auto
+  padding: $form-padding
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+  display: flex
+  flex-direction: column
+  margin-top: 110px
+  .formGroup
+    display: flex
+    flex-direction: column
+    margin-bottom: 20px
+    .label
+      margin-bottom: 5px
+    .formControl
+      width: 100%
+      padding: $input-padding
+      margin: $input-margin
+      border: 1px solid $border-color
+  .submitButton
+    padding: $input-padding
+    margin: $input-margin
+    width: 100%
+    background-color: $btn-submit-bg-color
+    color: white
+    border: none
+    cursor: pointer
+    transition: background-color 0.3s ease
+    &:hover
+      background-color: $btn-submit-hover-color

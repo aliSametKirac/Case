@@ -1,0 +1,64 @@
+.navbar
+  background-color: #0d2956
+  padding: 1rem 2rem
+  display: flex
+  align-items: center
+  justify-content: space-between
+  @media (max-width: 576px)
+    padding: 0.5rem 1rem
+  @media (min-width: 577px) and (max-width: 768px)
+    .logo a
+      font-size: 1.25rem
+  @media (min-width: 769px)
+    .logo a
+      font-size: 1.5rem
+  .brand
+    .logo
+      color: white
+      font-weight: bold
+      text-decoration: none
+      font-size: 1.8rem
+      transition: color 0.3s ease
+      img
+        height: 50px
+        transition: transform 0.3s ease
+        &:hover, &:focus
+          transform: scale(1.1)
+      &:hover, &:focus
+        color: #a8dadc
+  .navList
+    list-style: none
+    padding: 0
+    margin: 0
+    display: flex
+    gap: 1rem
+  .navItem
+    .active
+      border-bottom: 2px solid #a8dadc
+    a
+      color: white
+      text-decoration: none
+      font-weight: 500
+      padding: 0.5rem 0
+      transition: all 0.3s ease
+      &:hover, &:focus
+        color: #a8dadc
+  .searchAndLogin
+    display: flex
+    align-items: center
+    gap: 1rem
+    .searchButton, .loginButton
+      background-color: transparent
+      border: 1px solid white
+      color: white
+      cursor: pointer
+      padding: 0.5rem 1rem
+      text-decoration: none
+      transition: all 0.3s ease
+      border-radius: 0.5rem
+      &:hover, &:focus
+        color: #0d2956
+        background-color: white
+        border-color: white
+    .searchButton
+      border: none

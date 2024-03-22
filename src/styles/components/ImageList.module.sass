@@ -1,0 +1,23 @@
+$background-color: #f0f0f0
+$item-border-color: #ccc
+$font-stack: Arial, sans-serif
+
+@mixin flexbox-layout
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+
+.imageList
+  +flexbox-layout
+  padding: 20px
+
+  .image-item
+    border: 1px solid $item-border-color
+    margin: 10px
+    padding: 10px
+    width: calc(33% - 20px)
+    box-sizing: border-box
+
+    img
+      width: 100%
+      height: auto
